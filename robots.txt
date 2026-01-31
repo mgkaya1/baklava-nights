@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://baklavanights.com/sitemap.xml
+
+# Disallow crawling of sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*utm*
+Disallow: /*?*fbclid*
+Disallow: /*?*gclid*
+
+# Allow crawling of main assets
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.ico
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1
